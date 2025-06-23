@@ -19,7 +19,7 @@ Install them using pip:
 
 ```bash
 pip install opencv-python mediapipe scikit-learn numpy
-
+```
 Note: You may need to manually download and load the EMNIST dataset if not included.
 Reference Materials
 Documentation
@@ -78,14 +78,4 @@ Running the Program
 
         Final character prediction
 
-Feel free to contribute, report issues, or suggest improvements.
-
-
-You can now:
-
-1. Save this as a `README.md` file.
-2. Add it to your GitHub repository root.
-3. Commit and push the changes.
-
-Let me know if you want a downloadable version or help setting up `.gitignore`, `requirements.txt`
 
