@@ -1,27 +1,91 @@
-# Final_ML
-author: Jacob Fiske
-Class: CS3120
-Final Machine Learning Project: Ai Drawing Letter Prediction
+# AI Drawing Letter Prediction – Final Machine Learning Project
 
-Resources:
-Packages - OpenCV, MediaPipe, SKlearn, Emnist, Numpy
-Links - (Frequently used documentation)
-        https://docs.opencv.org/master/
-        https://google.github.io/mediapipe/
-        (Supplemental Learning)
-        Murtaza's Workshop - Robotics and AI
-        (CS3120 Lecture Videos and Notes)
+**Author**: Jacob Fiske  
+**Course**: CS3120 – Machine Learning  
 
-Steps:
-!!! IMPORTANT A WEBCAM OR WIRED CAMERA IS REQUIRED TO RUN THE CODE !!!
-Configure and run "recognition.py"
-two windows will pop up: the black canvas window and the camera.
-the user must show their hand with their palm facing the camera.
-(use a well lit uniform background for best results, from my experience)
-Once the hand is recognized the user can start to draw.
-Hold the index finger and middle finger up with the rest of the fingers down to pause drawing.
-Hold only the index finger up to start drawing.
-Once finished press q to save the handwritten letter for the MLP to start training then predict
-the given image.
-The iterations, loss, score, and prediction are outputted into the console
+## Project Overview
+This project leverages computer vision and machine learning to recognize handwritten letters drawn in the air using a webcam. The user can draw letters with their hand, which are then processed and classified by a trained machine learning model.
+
+## Dependencies
+The following Python packages are required to run this project:
+
+- `opencv-python`
+- `mediapipe`
+- `scikit-learn`
+- `numpy`
+- `emnist` (dataset)
+
+Install them using pip:
+
+```bash
+pip install opencv-python mediapipe scikit-learn numpy
+
+Note: You may need to manually download and load the EMNIST dataset if not included.
+Reference Materials
+Documentation
+
+    OpenCV Documentation
+
+    MediaPipe Documentation
+
+Learning Resources
+
+    Murtaza's Workshop – Robotics and AI (YouTube)
+
+    CS3120 Lecture Videos and Notes
+
+Setup & Usage Instructions
+
+    ⚠️ Important: A webcam or wired camera is required to run this project.
+
+Running the Program
+
+    Execute the script:
+
+    python recognition.py
+
+    Two windows will appear:
+
+        Canvas Window – A black screen where your hand-drawn letter appears.
+
+        Camera Feed – Live feed for hand tracking.
+
+    Drawing Controls:
+
+        Show your hand with your palm facing the camera.
+
+        Use a well-lit, uniform background for best results.
+
+        Raise only the index finger to start drawing.
+
+        Raise both the index and middle fingers (with others down) to pause drawing.
+
+    Once finished, press q to:
+
+        Save the image
+
+        Train the MLP model
+
+        Predict the drawn character
+
+    Output in the console:
+
+        Number of training iterations
+
+        Loss value
+
+        Accuracy score
+
+        Final character prediction
+
+Feel free to contribute, report issues, or suggest improvements.
+
+
+You can now:
+
+1. Save this as a `README.md` file.
+2. Add it to your GitHub repository root.
+3. Commit and push the changes.
+
+Let me know if you want a downloadable version or help setting up `.gitignore`, `requirements.txt`
 
